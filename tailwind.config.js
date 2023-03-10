@@ -5,8 +5,8 @@ const { colors: defaultColors } = require('tailwindcss/defaultTheme')
 const colors = {
   ...defaultColors,
   ...{
-    primary: '#212121',
-    background: '#fbf6f1',
+    black: '#212121',
+    bone: '#fbf6f1',
     mtaRed: '#ee352e',
     mtaOrange: '#ff6319',
     mtaGreen: '#6cbe45',

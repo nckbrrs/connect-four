@@ -5,11 +5,12 @@
 import React from 'react'
 import Document, { DocumentContext } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import { RenderPage } from 'next/dist/shared/lib/utils'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
+    const sheet: ServerStyleSheet = new ServerStyleSheet()
+    const originalRenderPage: RenderPage = ctx.renderPage
     try {
       ctx.renderPage = () =>
         originalRenderPage({
