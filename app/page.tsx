@@ -1,15 +1,14 @@
-import type { AppProps } from 'next/app'
-import GlobalStyles from '../styles/GlobalStyles'
-import Layout from '../components/layout'
-import { useEffect } from 'react'
+"use client"
+import Game from "@/components/ui/Game";
+import { useEffect, useMemo } from "react";
 
-export default function App({ Component, pageProps }: AppProps) {
+const Home: React.FC = () => {
   useEffect(() => {
-    // Only execute all the code below in client side
+    // only execute all the code below in client side
     if (typeof window !== 'undefined') {
       // Handler to call on window resize
       const handleResize = () => {
-        let vh: number = window.innerHeight * 0.01
+        let vh = window.innerHeight * 0.01
         document.documentElement.style.setProperty('--vh', `${vh}px`)
       }
 
@@ -25,9 +24,26 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
 
   return (
-    <Layout>
-      <GlobalStyles />
-      <Component {...pageProps} />
-    </Layout>
+    <Container>
+      <Game/>
+    </Container>
   )
 }
+
+const Container = (props: {children: React.ReactNode}) => (
+  <div
+    className={`
+      flex
+      flex-col
+      items-start
+      justify-center
+      h-full
+      text-black
+      dark:text-bone
+    `}
+  >
+    {props.children}
+  </div>
+)
+
+export default Home;

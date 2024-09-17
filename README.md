@@ -1,6 +1,6 @@
 # Overview
 
-A simple, responsive, single-page NextJS + Typescript Connect Four web app with Tailwind and Styled Components.
+A simple, responsive, single-page Connect Four web app created with NextJS, Typescript, and Tailwind.
 
 ![Screenshot 2023-03-09 at 8 47 34 PM](https://user-images.githubusercontent.com/22487838/224202253-d584c92b-3735-4628-b296-04b7ec6a8d02.png)
 
