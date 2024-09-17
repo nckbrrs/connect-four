@@ -4,8 +4,8 @@ import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 
 export const metadata: Metadata = {
-  title: "Nick Barrs",
-  description: "Nick Barrs's personal website",
+  title: "Connect Four",
+  description: "A simple Connect Four web app created by Nick Barrs",
 };
 
 export const viewport: Viewport = {
