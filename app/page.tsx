@@ -35,9 +35,10 @@ const Container = (props: {children: React.ReactNode}) => (
     className={`
       flex
       flex-col
-      items-start
+      items-center
       justify-center
-      h-full
+      h-auto
+      w-full
       text-black
       dark:text-bone
     `}

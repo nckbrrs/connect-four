@@ -23,7 +23,8 @@ const Container = (props: {children: React.ReactNode}) => (
             items-center
             text-[0.75em]
             tracking-wide
-            text-bone
+            text-black
+            dark:text-bone
             [&>*]:opacity-30
         `}
     >

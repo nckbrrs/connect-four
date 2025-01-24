@@ -42,8 +42,7 @@ const AppContainer = (props: {children: React.ReactNode}) => (
       flex
       flex-col
       min-h-screen
-      w-screen [&>*]:max-w-[2000px]
-      justify-between
+      w-full
       items-center
       px-5 md:px-16
       animate-fadeIn
@@ -58,8 +57,11 @@ const ContentContainer = (props: {children: React.ReactNode}) => (
     className={`
       flex
       flex-col
-      w-full
-      justify-start
+      w-full lg:w-4/5
+      h-auto
+      justify-center
+      items-center
+      grow
     `}
   >
     {props.children}
